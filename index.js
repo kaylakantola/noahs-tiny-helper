@@ -44,6 +44,7 @@ function main() {
             return readAndWriteFile({inputPath, outputPath})
         })
     })
+    console.log(`Done! Find your results in: ${outputDir}`)
 }
 
 main()
