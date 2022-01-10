@@ -1,5 +1,6 @@
 const es = require('event-stream')
 const fs = require('fs');
+const fse = require('fs-extra')
 const {startsWith, replace} = require('ramda')
 
 function lineFilter(line) {
@@ -34,7 +35,7 @@ function readAndWriteFile({inputPath, outputPath}){
 function main() {
     const date = Date.now()
     const outputDir = `./output/${date}`
-    fs.mkdirSync(outputDir);
+    fse.ensureDir(outputDir);
 
     fs.readdir("./input", (err, files) => {
         return files.forEach(file => {

@@ -4,7 +4,8 @@
   "description": "an even tinier helper",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "setup": "mkdir input output"
   },
   "author": "",
   "license": "ISC",
