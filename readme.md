@@ -3,7 +3,7 @@
 ## Before you start ... 
 
 1. Open up the terminal by going to `Macintosh HD > Applications > Utilities > Terminal.app` 
-2. Say to yourself, "let's hack into the mainframe"
+2. Say to yourself, "I'm going to hack into the mainframe"
 3. Sign up for a free [github account](https://github.com/) 
 4. Follow the instructions [here](https://docs.github.com/en/get-started/quickstart/set-up-git#setting-up-git) to log into github from your terminal. You will only have to do this once, not every time you open the terminal.
 5. If something goes wrong, just quit the terminal app and open it up again 
@@ -28,10 +28,16 @@ Navigate into that directory via the terminal by typing:
 cd noahs-tiny-helper
 ```
 
-Finally, run this command to install external packages (its ok if you dont know what that means):
+Next, run this command to install external packages (its ok if you dont know what that means):
 
 ```sh
 npm install
+```
+
+Finally, run this setup command to create some folders to put files in: 
+
+```sh
+npm run setup
 ```
 
 These steps are all one-time steps. If something goes wrong, though, you can just delete the `noahs-tiny-helper` folder and start over from the `git clone` step.
